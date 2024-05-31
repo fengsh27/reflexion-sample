@@ -22,8 +22,8 @@ import neo4j_utils as nu
 load_dotenv()
 
 connection_args = {
-    "host": "10.95.224.94",
-    'port': "47687",
+    "host": os.environ.get("GRAPH_DB_HOST"),
+    'port': os.environ.get("GRAPH_DB_PORT"),
 }
 try:
     db_uri = "bolt://" + connection_args.get("host") + \
