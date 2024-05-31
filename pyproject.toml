@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "reflexion-demo"
+version = "0.1.0"
+description = ""
+authors = ["fengsh"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain = "^0.1.13"
+langgraph = "^0.0.30"
+langchain-openai = "^0.1.1"
+python-dotenv = "^1.0.1"
+neo4j-utils = "^0.0.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
